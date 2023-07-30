@@ -1,6 +1,6 @@
 <template>
 <div class="terminalebg w-100 rounded ombre text-capitalize" data-aos="fade-up">
-    <div class="bg-danger w-100 d-flex justify-content-end p-2 rounded">
+    <div class="bg-danger w-100 d-flex justify-content-end p-2 rounded-top">
         <span class="material-symbols-outlined bg-white rounded-circle spazi">
         remove
         </span>
@@ -71,7 +71,7 @@ export default{
 .terminalebg{
   opacity: 1;
   background-color: black;
-  background-image: url('../assets/terminalebg.png');
+  background-image: url('../../assets/terminalebg.png');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
