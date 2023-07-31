@@ -4,6 +4,7 @@
             <br>
             <br>
             <a href="#/scopri"><button type="button" class="btn btn-primary btn-lg">Scopri ora</button></a>
+            <div class="linea"></div>
         </div>
 </template>
 <script>
@@ -25,18 +26,36 @@ export default{}
   margin: 0 auto;
   letter-spacing: 2px; 
   animation: 
-    typing 1.5s steps(40, end),
-    blink-caret .60s step-end infinite;
+    scrivo 1.5s steps(40, end),
+    lineao .70s step-end infinite;
 }
 
-@keyframes typing {
+@keyframes scrivo {
   from { width: 0 }
   to { width: 84% }
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
+
+@keyframes lineao {
   from, to { border-color: transparent }
   50% { border-color: orange; }
+}
+.linea{
+  background-color: aliceblue;
+  position: absolute;
+  width:20px;
+  height:0px;
+  animation: 1.5s lineare;
+  top:63.5%;
+  opacity: 0.5;
+}
+@keyframes lineare {
+  from{
+    height:500px;
+    top:75%
+  }
+  to{
+    height:0px;
+  }
 }
 </style>
